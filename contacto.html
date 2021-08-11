@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <title>ZapatosDeTango</title>
@@ -67,58 +67,56 @@
     <!--Termina el Header-->
 
     <!--Empieza el Main-->
-    <main class="Main1">
-        <section class="Main1__Carrusel carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="Main1__Carrusel__div__div carousel-item active">
-                    <img src="Multimedia/Carrucel1.jpg" class="d-block w-100" alt="Imagen para Ruleta">
-                </div>
-                <div class="Main1__Carrusel__div__div carousel-item">
-                    <img src="Multimedia/Carrucel2.jpg" class="d-block w-100" alt="Imagen para Ruleta">
-                </div>
-                <div class="Main1__Carrusel__div__div carousel-item">
-                    <img src="Multimedia/Carrucel3.png" class="d-block w-100" alt="Imagen para Ruleta">
+    <main class="Main3">
+        <form class="row g-3">
+            <div class="col-4">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col-4">
+                <label class="form-label">Apellido</label>
+                <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+            <div class="col-4">
+                <label class="form-label">Ciudad</label>
+                <input type="text" class="form-control" placeholder="Ciudad">
+            </div>
+            <div class="col-12">
+                <div class="col-6">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Consultas sobre precios, talles, modelos de zapatos..."></textarea>
                 </div>
             </div>
-            <button class="Main1__Carrusel__BotonIzq carousel-control-prev" type="button"
-                data-bs-target=".Main1__Carrusel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="Main1__Carrusel__BotonDer carousel-control-next" type="button"
-                data-bs-target=".Main1__Carrusel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <section class="container-fluid overflow-hidden" data-aos="flip-left" data-aos-duration="3000">
-            <div class="Main1__Frase__FilaVacia row"></div>
-            <div class="Main1__Frase__Texto row">
-                <h1> Con corazón hecho a mano, cómodo y elegante. Zapatos de tango para hombre y mujer.
-                </h1>
+            <div class="col-12">
+                <div class="col-2">
+                    <label for="inputState" class="form-label">Motivo de Consulta</label>
+                    <select id="inputState" class="form-select ">
+                        <option selected>Elija una opcion</option>
+                        <option>Zapatos Muejer</option>
+                        <option>Zapatos Caballero</option>
+                        <option>General</option>
+                    </select>
+                </div>
             </div>
-            <div class="Main1__Frase__FilaVacia row"></div>
-        </section>
-        <section class="Main1__Menu">
-            <article class="Main1__Menu__Articulo">
-                <a href="mujer.html">
-                    <img src="Multimedia/MenuM.png" alt="">
-                </a>
-            </article>
-            <article class="Main1__Menu__Articulo">
-                <a href="hombre.html">
-                    <img src="Multimedia/MenuH.png" alt="">
-                </a>
-            </article>
-            <article class="Main1__Menu__Articulo">
-                <a href="contacto.html">
-                    <img src="Multimedia/MenuC.jpg" alt="">
-                </a>
-            </article>
-        </section>
+            <div class="col-3">
+                <label class="form-label">Email </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Deseo recibir mail con las ultimas promociones
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
     </main>
     <!--Termina el Main-->
-
     <!--Empieza el Footer-->
     <footer class="Footer overflow-hidden">
         <info class="Footer__Info">

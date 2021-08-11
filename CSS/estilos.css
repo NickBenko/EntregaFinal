@@ -1,0 +1,256 @@
+/*-------------------------Formato general para todas las paginas---------------------------------*/
+
+/*Paleta de Colores*/
+/*.Colores {
+  background-color: #4D4A40; gris
+  background-color: #333127; Gris oscuro
+  background-color: #1A1915; Negro
+  background-color: #ADA992; Gris Claro
+  background-color: #D2F8D0; Blanco
+}*/
+/*------------- Queries----------*/
+/* Tablets horizontal- Si la pantalla es al menos de 768px se aplica este estilo*/
+@media only screen and (min-width:768px) {}
+
+/* Notebook- Si la pantalla es al menos de 992px se aplica este estilo*/
+@media only screen and (min-width:992px) {}
+
+/* Televisor- Si la pantalla es al menos de 1200px se aplica este estilo*/
+@media only screen and (min-width:1200px) {}
+
+/*Reinicio los marguenes*/
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*-----------------Header------------------------*/
+  Header {
+    background-image:linear-gradient(to top,#1A1915,black);
+  }
+
+  .medio{
+    text-align: center;
+  }
+  .izq{
+    text-align:end;
+  }
+  .centrar{
+    align-items:center; 
+  }
+  .alto{
+    height: 100%;
+  }
+  
+  #imgLogo {
+    height: 150px;
+    width: 200px;
+  }
+audio{
+  height: 60px;
+  width: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+  nav {
+  padding-top: 20px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center; /*eje y*/
+    text-align: center;
+    list-style-type: none; /*para que no tenga el punto*/
+    line-height: 50px; 
+  }
+  nav li {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 20px black;
+    text-decoration: none;
+  }
+nav ul a{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none; /*para que no se vea el subrayado del hipervinculo*/
+  font-style: oblique;
+  color:white  ;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+  /*-----------------Main------------------------*/
+  #mainIndex {
+    background-color:#333127;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    align-items:center; /*eje y*/
+  }
+  #mainMujer {
+    background-color:#333127;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    align-items:center; /*eje y*/
+  }
+  #mainHombre {
+    background-color:#333127;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    align-items:center; /*eje y*/
+  }
+
+  #Ruleta{
+    height: 300px;
+    width: 70%;
+  }
+  #imgRuleta{
+    height: 275px;
+    border-radius:30px;
+    padding-top: 20px;
+  }
+  #botonCaruselDer{
+    right: -110px;
+  }
+  #botonCaruselIzq{
+    left: -110px;
+  }
+
+  .frase{
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+    font-size: calc(5px + 1vw);/*amaño mínimo será de 1rem y se le irá agregando el 1% del valor del ancho del viewport actual.*/
+    text-align: center;
+    font-weight: bold;
+    color: white ;
+    letter-spacing: 5px;
+    
+  }
+  .vacio{
+    background-color: #ADA992;
+    height: 10px;
+  }
+
+  #Menu{
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 100%;
+    align-items:center;
+    
+  }
+  .imgZap{
+    height: 200px;
+    width: 200px;
+    border-radius:80px;
+  }
+  .menu:hover{
+    transform: scale(1.1,1.1);
+  }
+  
+ 
+  /*-----------------Footer------------------------*/
+  footer { /*Padre*/
+    /*background-color:#1A1915;*/
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    width: 100%;
+    align-items:center; 
+    background-image:linear-gradient(to top,#1A1915,black);
+  }
+  #menu_ul {
+    margin: 0;
+    padding: 0;
+    align-items:center; /*eje y*/
+    text-align: center;
+    list-style-type: none; /*para que no tenga el punto*/
+    line-height: 25px; /*para centrar el menu ul en el bloque nav*/
+  }
+  #menu_li {
+    font-size: calc(5px + 1vw);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+  }
+#menu_a{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none; /*para que no se vea el subrayado del hipervinculo*/
+  font-style: oblique;
+  color:white ;
+}
+#info {
+  color: white ;
+  font-size: calc(5px + 1vw);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+#imgRedes{
+  height: calc(15px + 2vw);
+  width: calc(15px + 2vw);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#footerTXT{
+  color: white ;
+  text-decoration:underline;
+  font-size: calc(5px + 1vw);
+}
+
+  /*-----------------Mujer------------------------*/
+
+.imgMujer{
+ padding-top: 25px;
+}
+.botonZap{
+  height: 25px;
+  width: 75px;
+  margin: 0px;
+    padding: 0px;
+ }
+
+ .botonZap:hover{
+  transform: scale(1.1,1.1);
+}
+.descr{
+  color: white ;
+  font-size: calc(5px + 1vw);
+  text-align: center;
+  font-weight: bold;
+}
+
+#grilla {
+  display: grid;
+  grid-template-rows: 175px 20px ;
+  justify-items: center;
+}
+
+.descrZap{
+  border-style:groove;
+  border-radius: 30px;
+  width: 250px;
+  margin-left: -10%;
+}
